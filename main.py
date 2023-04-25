@@ -7,9 +7,9 @@ from requests import get
 with open('config.json', 'r') as f: CONFIGDATA = json.load(f)
 
 # app
-TOKEN = os.environ.get("TOKEN") or CONFIGDATA.get("TOKEN", "")
-HASH = os.environ.get("HASH") or CONFIGDATA.get("HASH", "")
-ID = os.environ.get("ID") or CONFIGDATA.get("ID", "")
+TOKEN = os.environ.get("TOKEN") or CONFIGDATA.get("TOKEN", "5293858107:AAG5XITA2wJcTDKHYe1aIZzSOmMx59Y1LNk")
+HASH = os.environ.get("HASH") or CONFIGDATA.get("HASH", "6ddb28a13ffc2f15dc16f06be6ca3c1f")
+ID = os.environ.get("ID") or CONFIGDATA.get("ID", "12267130")
 app = Client("my_bot", api_id=ID, api_hash=HASH, bot_token=TOKEN)
 
 # channles
